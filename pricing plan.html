@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        body {
+            font-family: 'Sono', sans-serif;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 40px;
+        }
+
+        .card {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .plan-button {
+            align-items: center;
+            padding: 5px;
+            background-color: #ff6600;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .features li {
+            padding: 10px;
+            font-size: 24px;
+        }
+
+        .pricingplan {
+            background-color: #f2f2f2;
+            max-width: 400px;
+            border-radius: 9px ;
+            text-align: center;
+        }
+        @media (max-width:1250px){
+        .container {
+            flex-direction: column;
+            height:100;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pricingplan">
+            <div class="card">Basic</div>
+            <ul class="features">
+                <li>✅ 10GB Storage</li>
+                <li>✅ 1 User</li>
+                <li>🚫 Support</li>
+            </ul>
+            <button class="plan-button">Sign Up</button>
+        </div>
+        <div class="pricingplan">
+            <div class="card">Standard</div>
+            <ul class="features">
+                <li>✅ 50GB Storage</li>
+                <li>✅ 5 User</li>
+                <li>✅ Phone &amp; Email Support</li>
+            </ul>
+            <button class="plan-button">Sign up</button>
+        </div>
+        <div class="pricingplan">
+            <div class="card">Premium</div>
+            <ul class="features">
+                <li>✅ 10GB Storage</li>
+                <li>✅ 10 User</li>
+                <li>✅ 24/7 Support</li>
+            </ul>
+            <button class="plan-button">Sign up</button>
+        </div>
+    </div>
+</body>
+
+</html>
